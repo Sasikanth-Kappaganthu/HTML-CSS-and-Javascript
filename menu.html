@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menu</title>
+<link rel="stylesheet" type="text/css" href="res-style.css">
+<script src="res-jscr.js">
+</script>
+<style>
+body{
+margin-top:60px;
+background-color:rgb(210 210 210);
+}
+h1{
+
+color:rgb(0 0 149);
+font-family:"monotype corsiva";
+font-size:45px;
+}
+</style>
+</head>
+<body>
+    <h1>Order Your Favourite:</h1> 
+
+<table id="menu-table">
+ <tr>
+    <td><strong>Food Items</strong></td>
+    <td><strong>Quantity</strong></td>
+    <td><strong>Price</strong></td>
+  </tr>
+  <tr>
+    <th colspan="3"><strong>Veg Starters</strong></th>
+  </tr>
+  <tr>
+    <td>Babycorn Manchuria</td>
+    <td><input name="qnt_1" type="number" id="qnt_1" value="0" size="3" data-price="100" oninput="CalculateItemsValue()" /></td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>Crispy corn </td>
+    <td><input name="qnt_2" type="number" id="qnt_2" value="0" size="3" data-price="120" oninput="CalculateItemsValue()" /></td>
+    <td>120</td>
+  </tr>
+  <tr>
+    <td>Gobi65</td>
+    <td><input name="qnt_3" type="number" id="qnt_3" value="0" size="3" data-price="80" oninput="CalculateItemsValue()" /></td>
+    <td>80</td>
+  </tr>
+  
+  <tr>
+    <th colspan="3"><strong>Soups</strong></th>
+  </tr>
+  <tr>
+    <td>Hot and Sour Soup</td>
+    <td><input name="qnt_1" type="number" id="qnt_4" value="0" size="3" data-price="70" oninput="CalculateItemsValue()" /></td>
+    <td>70</td>
+  </tr>
+  <tr>
+    <td>Tomato Soup</td>
+    <td><input name="qnt_2" type="number" id="qnt_5" value="0" size="3" data-price="60" oninput="CalculateItemsValue()" /></td>
+    <td>60</td>
+  </tr>
+  <tr>
+    <td>Veg Mancho Soup</td>
+    <td><input name="qnt_3" type="number" id="qnt_6" value="0" size="3" data-price="100" oninput="CalculateItemsValue()" /></td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <th colspan="3"><strong>Main Course</strong></th>
+  </tr>
+  <tr>
+    <td>Veg Biryani</td>
+    <td><input name="qnt_1" type="number" id="qnt_7" value="0" size="3" data-price="120" oninput="CalculateItemsValue()" /></td>
+    <td>120</td>
+  </tr>
+  <tr>
+    <td>Veg Fried Rice</td>
+    <td><input name="qnt_2" type="number" id="qnt_8" value="0" size="3" data-price="100" oninput="CalculateItemsValue()" /></td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>Flavoured Rice</td>
+    <td><input name="qnt_3" type="number" id="qnt_9" value="0" size="3" data-price="75" oninput="CalculateItemsValue()" /></td>
+    <td>75</td>
+  </tr>
+   <tr>
+    <th colspan="3"><strong>Desserts</strong></th>
+  </tr>
+  <tr>
+    <td>Gulab Jamun</td>
+    <td><input name="qnt_1" type="number" id="qnt_10" value="0" size="3" data-price="50" oninput="CalculateItemsValue()" /></td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Gazar Ka Halwa</td>
+    <td><input name="qnt_2" type="number" id="qnt_11" value="0" size="3" data-price="65" oninput="CalculateItemsValue()" /></td>
+    <td>65</td>
+  </tr>
+  <tr>
+    <td>Dry Fruit Sweet</td>
+    <td><input name="qnt_3" type="number" id="qnt_12" value="0" size="3" data-price="100" oninput="CalculateItemsValue()" /></td>
+    <td>100</td>
+  </tr>
+   
+   
+</table>
+<br><br>
+    
+  <label>
+    <strong><div >
+	<strong>Your Bill Amount: </strong>
+	<input type="text" id="ItemsTotal" name="ttl" readonly size="20" value="0">
+	</div></strong> </p>
+	
+ </label>
+	
+	<input type="submit" name="Order" value="Order" onclick="sub()">
+  
+</body>
+</html>  
